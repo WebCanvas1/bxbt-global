@@ -84,7 +84,31 @@ function Portal({ onClose }: { onClose: () => void }) {
     if (Object.keys(v).length === 0) {
       setStatus("loading");
       try {
-        await new Promise((resolve) => window.setTimeout(resolve, 700));
+        const response = await fetch(
+          "https://formsubmit.co/ajax/plirisglobal@yahoo.com",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              _subject: `New BXBT enquiry from ${form.name}`,
+              _template: "table",
+              _captcha: "false",
+              Name: form.name,
+              Company: form.company,
+              "Position / Title": form.position,
+              Mobile: form.mobile,
+              Email: form.email,
+              Message: form.message || "Not provided",
+            }),
+          },
+        );
+
+        if (!response.ok) throw new Error("Unable to send enquiry");
+
+        setForm(initialState);
         setStatus("success");
       } catch {
         setStatus("error");
