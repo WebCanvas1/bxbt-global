@@ -40,10 +40,18 @@ function App() {
               <span className="eyebrow-line" /> The challenge
             </p>
             <h1>
-              Our communities
+              Our Communities
               <br />
               <em>have a waste problem.</em>
             </h1>
+            <div className="desktop-convert">
+              <div className="convert-block">
+                <p className="convert-label">We Convert:</p>
+                <p className="convert-text">
+                  Tyres, Mattresses and Mixed Plastics Into Energy.
+                </p>
+              </div>
+            </div>
           </div>
           <div className="solution-block">
             <p className="eyebrow light">
@@ -55,10 +63,18 @@ function App() {
               <span>have a solution.</span>
             </h2>
             <p className="wte-label">WTE and Zero-CO₂ Innovations</p>
+            <div className="desktop-convert">
+              <div className="convert-block">
+                <p className="convert-label">We Convert:</p>
+                <p className="convert-text">
+                  CO<sub>2</sub> Into Biodiesel.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="landing-convert">
+        <div className="landing-convert mobile-convert">
           <div className="convert-block">
             <p className="convert-label">We Convert:</p>
             <p className="convert-text">
