@@ -195,7 +195,7 @@
   padding: 0 28px 0 0;
 }
 
-.mobile-convert {
+.landing-convert.mobile-convert {
   display: none;
 }
 
@@ -496,7 +496,7 @@
   .desktop-convert {
     display: none;
   }
-  .mobile-convert {
+  .landing-convert.mobile-convert {
     display: flex;
   }
   .landing-headlines {
