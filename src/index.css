@@ -187,6 +187,18 @@
 }
 
 /* ===== Conversion Statements ===== */
+.desktop-convert {
+  margin-top: 5vh;
+}
+
+.desktop-convert .convert-block {
+  padding: 0 28px 0 0;
+}
+
+.mobile-convert {
+  display: none;
+}
+
 .landing-convert {
   display: flex;
   align-items: stretch;
@@ -481,6 +493,12 @@
 
 /* ===== Responsive (max-width: 900px) ===== */
 @media (max-width: 900px) {
+  .desktop-convert {
+    display: none;
+  }
+  .mobile-convert {
+    display: flex;
+  }
   .landing-headlines {
     grid-template-columns: 1fr;
     gap: 4vh;
