@@ -158,7 +158,7 @@ function Portal({ onClose }: { onClose: () => void }) {
             <p className="eyebrow">
               <span className="eyebrow-line" /> Tell us a little more
             </p>
-            <h2 id="portal-heading">Let's talk.</h2>
+            <h2 id="portal-heading">Let's Talk.</h2>
             <div className="form-grid">
               <Field label="Name" value={form.name} error={errors.name} onChange={(v) => update("name", v)} />
               <Field label="Company" value={form.company} error={errors.company} onChange={(v) => update("company", v)} />
